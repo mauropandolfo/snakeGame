@@ -1,0 +1,84 @@
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff1d0;
+}
+
+.desktop{
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    text-transform: none;
+    color: #086788;
+}
+#board, .boardInfo, .leaderBoards {
+    min-width: 500px;
+    margin: 2rem;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    border: solid 10px #086788;
+}
+
+#start, .boardInfo {
+    font-size: 25px;
+}
+
+.boardInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+
+#start {
+    background-color: #dd1c1a;
+    border: none;
+    color: white;
+}
+
+#scoreBoard {
+    display: inline-flex;
+}
+
+.square {
+    aspect-ratio: 1;
+}
+
+.emptySquare {
+    background-color: #07a0c3;
+}
+
+.snakeSquare {
+    background-color: #f0c808;
+}
+
+.foodSquare {
+    background-color: #ee8775;
+    border: 2px solid #dd1c1a;
+}
+
+tr{
+    display:flex;
+    justify-content: space-between;
+
+}
+.mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 768px){
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+}
